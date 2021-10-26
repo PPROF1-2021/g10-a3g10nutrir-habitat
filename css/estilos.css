@@ -1,5 +1,7 @@
 html
-{background-color:black
+{
+  background-color:black
+
 
 }
 p
@@ -32,16 +34,23 @@ header {
     background-color: rgb(47,47,47);
     padding: 20px;
     text-align: center;
+    width: 1360px;
+    height: 400px;
+
+    
     
     
 
   }
   
   footer {
-    color:royalblue;
+  
     background-color:rgb(47, 47, 47);
     text-align: center;
     padding: 10px;
+    width: 1360px;
+    height: 400px;
+
   }
  
   a:hover {
@@ -66,12 +75,8 @@ li a {
   padding: 8px 8px;
   text-decoration: none;
 }
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  background-color: #2196F3;
-  padding: 10px;
-}
+
+
 .contenedor{
   background-color: grey; 
   padding:15px ;
