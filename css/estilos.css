@@ -78,7 +78,7 @@ li a {
 
 
 .contenedor{
-  background-color: grey; 
+  background-color:#1B4F72 ; 
   padding:15px ;
   width:1366px;
   height:600px;
@@ -92,6 +92,14 @@ li a {
     width: 200px;
     text-align: justify;
   
+  }
+
+  .Imc{
+    text-align: center;
+    padding: 50px;
+    background-color:#7B7D7D;
+    
+    
   }
  
   /*barra horizontal2*/
