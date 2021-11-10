@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROUTINES AND NUTRITION SUPPORT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
   <link rel="stylesheet" href="css/estilos.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
  
@@ -25,31 +26,97 @@
   </nav>
 </header>
   
-    <h2>Logueate!</h1>
+    <h2>Logueate!</h2>
     <h3>Queres empezar un plan?</h3>
     <p>Bien! Primero tenes que loguearte completando un registro simple Una vez hecho esto te pedimos datos para hacer un analisis y de esta forma crear un plan de asesoramiento y rutinas que se ajuste a vos. </p>
-    <h2>Empecemos! Crea tu cuenta:</h2>
+    <h2>Empecemos! Crea tu cuenta:</h2> <br>
     
-    <form>
-        <p>
-        <label for="nusuario">Usuario:</label><br>
-        <input type="text" id="nusuario" required="Campo Obligatorio">  <br>
-
-        <label for="contra">Contraseña:</label><br>
-        <input type="password" id="contra" required="Campo Obligatorio">  <br>
-
-        <label for="2contra">Repita la contraseña:</label><br>
-        <input type="password" id="2contra" required="Campo Obligatorio"> <br>
-
-        <label for="email">E-mail:</label><br>
-        <input type="mail" id="email" required="Campo Obligatorio">  <br>
-        
-        
-        <a href="registrodeusuarios2.html">
-           <input type="button" value="Registrarse" >
-        </a>
-        </p>
-    </form> 
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-4">
+        <label for="validationCustom01" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="validationCustom01" value="" required>
+        <div class="valid-feedback">
+          Correcto!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustom02" class="form-label">Apellido</label>
+        <input type="text" class="form-control" id="validationCustom02" value="" required>
+        <div class="valid-feedback">
+          Correcto!
+        </div>
+      </div>
+      <div class="col-md-4">
+        <label for="validationCustomUsername" class="form-label">Usuario</label>
+        <div class="input-group has-validation">
+          <span class="input-group-text" id="inputGroupPrepend">@</span>
+          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+          <div class="invalid-feedback">
+            Por favor elija un nombre de usuario.
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">Ciudad</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Por favor  introduzca una ciudad valida.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom04" class="form-label">Provincia</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Elija...</option>
+          <option>Cordoba</option>
+          <option>Buenos Aires</option>
+          <option>Santa Fe</option>
+          <option>Entre Rios</option>
+          <option>Corrientes</option>
+          <option>Misiones</option>
+          <option>Chaco</option>
+          <option>Jujuy</option>
+          <option>Salta</option>
+          <option>La Rioja</option>
+          <option>Tucuman</option>
+          <option>Santiago Del Estero</option>
+          <option>San Juan</option>
+          <option>Neuquen</option>
+          <option>Tierra Del Fuego</option>
+          <option>Chubut</option>
+          <option>Rio Negro</option>
+          <option>Santa Cruz</option>
+          <option>La Pampa</option>
+          <option>San Luis</option>
+          <option>Mendoza</option>
+          <option>Catamarca</option>
+        </select>
+        <div class="invalid-feedback">
+          Please select a valid state.
+        </div>
+      </div>
+      <div class="col-md-3">
+        <label for="validationCustom05" class="form-label">Cod. Postal</label>
+        <input type="text" class="form-control" id="validationCustom05" required>
+        <div class="invalid-feedback">
+          Por Favor introduzca un codigo valido.
+        </div>
+      </div>
+      <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+          <label class="form-check-label" for="invalidCheck">
+            Acepta terminos y condicones.
+          </label>
+          <div class="invalid-feedback">
+            Debe aceptar antes de enviar.
+          </div>
+        </div>
+      </div>
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar</button>
+      </div>
+    </form> <br>
+    
 
 
     <h3>Conceptos que tenes que saber</h3>
@@ -83,6 +150,6 @@ como factores de protección o de riesgo. </p>
 
 
 
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
 </body>
 </html>
