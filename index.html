@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ROUTINES AND NUTRITION SUPPORT</title>
-
-  <link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="css/estilos.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
   
 </head>
 
@@ -17,11 +17,12 @@
   
   <nav>
     <ul>
-       <li><a href="index.html">Inicio</a></li>
-       <li><a href="Registrodenuevosusuario.html">Registro de nuevos usuarios</a></li>
-       <li><a href="Login.html">Login</a> </li>
+       <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+       <li><a href="Registrodenuevosusuario.html"><i class="fas fa-sign-in-alt"></i> Registro de nuevos usuarios</a></li>
+       <li><a href="Login.html"><i class="fas fa-user"></i> Login</a> </li>
       </ul>
     </nav>
+    
   </header>
 
   
@@ -70,28 +71,40 @@
   </div>
 
   </div>
+  
+  <div class="Imc">
+  <h2>Calcula tu índice de masa corporal</h2>
+  <form action="">
+    <label >Peso </label> <input id="txtPeso" type="text"/>
+    <label>Altura</label> <input id="txtAltura" type="text"/>
+    <button id="btnCalcular">Calcular</button>
+  </form>
+  <br/>
+  <img src="img/tabla_imc.png" />
+  </div>
 
-
+  
 
 <section>
         <p>¿Esta usted registrado?<a href="Login.html">USUARIO REGISTRADO</a></p>
         <p>¿Es usted un usuario nuevo?<a href="Registrodenuevosusuario.html">USUARIO NUEVO</a></p>
       </section>
+      <footer>
+        <ul>
+          <li><a class="active" href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+          <li><a href="Registrodenuevosusuario.html"><i class="fas fa-sign-in-alt"></i> Registro de nuevos usuarios</a></li>
+          <li><a href="Login.html"> <i class="fas fa-user"></i> Login</a></li>
+          
+        </ul>
+        <p><i class="fas fa-envelope-square fa-3x"></i> Contactenos routinesandnutritionsupport@gmail.com</p>
+        <p><i class="far fa-copyright fa-3x"></i> 2021 Copyright</p>
+        <p>   <i class="fab fa-instagram fa-3x"></i>  <i class="fab fa-facebook fa-3x"></i>  Seguinos en nuetras redes </p>
+        
+      </footer>
 
       
-      
+ <script src="js/funcionesGrupo99.js"></script>   
 </body>
-<footer>
-  <ul>
-    <li><a class="active" href="index.html">Inicio</a></li>
-    <li><a href="Registrodenuevosusuario.html">Registro de nuevos usuarios</a></li>
-    <li><a href="Login.html">Login</a></li>
-    
-  </ul>
-  <p>Contactenos routinesandnutritionsupport@gmail.com</p>
-  <p>© 2021 Copyright</p>
-  <p>Seguinos en nuetras redes</p>
-  
-</footer>
+
 
 </html>
