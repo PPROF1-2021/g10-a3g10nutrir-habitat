@@ -22,36 +22,56 @@
       </nav>
     <h1>Comencemos con el armado de tu plan:</h1>
     <p>Como te dijimos en la pagina anterior, ahora necesitamos que llenes la siguiente planilla para empazar la elaboracion de tu plan.</p> 
-    <form>
+    
+    <form action="">
         <p>
 
-        <label for="nombres">Nombre:</label><br>
+        <div>
+        <label class="col-md-3" for="nombres">Nombre:</label><br>
         <input type="text" id="nombres" name="nombre" required="Campo Obligatorio">  <br>
-        
+        </div>
+
         <label for="apellido">Apellido:</label><br>
         <input type="text" name="apellido" id="apellido"><br>
-        
-        <label for="fechadenacimiento">Fecha de Nacimiento:</label><br>
-        <input type="date" id="fechadenacimiento" required="Campo Obligatorio">  <br>
-    
+       <!-- Input tipo date --> 
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label><br> 
+        <input type="date" id="fecha_nacimiento" onchange="calcularEdad()"> 
+        <button type="button" onclick="calcularEdad()" id="boton"  class="btn btn-primary">Mostrar tu edad</button>
+            <script src="js/date.js"></script>
+        <br>
+        <!--  -------------------- -->
         <label for="altura">Altura (en cm):</label><br>
         <input type="number" id="altura" required="Campo Obligatorio"> <br>
         
         <label for="peso">Peso:</label><br>
         <input type="number" name="peso" id="peso"><br>
 
-        <p>Sexo:</p>
-        <input type="radio" value="hombre" name="sexo" id="hombre"><br>
-        <label for="hombre">Hombre</label><br>
+        <label for="sexo">Sexo:</label> <br>
+        
+        <label for="hombre">Hombre</label>
+        <input type="radio" value="hombre" name="sexo" id="hombre">
 
+        <label for="mujer">Mujer</label>
         <input type="radio" value="mujer" name="sexo" id="mujer"><br>
-        <label for="mujer">Mujer</label><br>
+        <p></p> 
 
         <label for="actividadfisica">Haces Actividad Fisica? (En caso de que si hagas comentanos como es tu rutina de ejercicio)</label><br>
         <textarea></textarea>  <br>
 
         <label for="dieta">Hablanos sobre tu diate diaria, es decir que alimentos consumis regularmente y en que horarios</label><br>
         <textarea></textarea><br>
+
+        <button type="button" onclick="registroexitoso()"  class="btn btn-primary">Enviar datos</button>
+                <script src="js/registroexitoso.js"></script>
+
+        <div class="col-12">
+            
+            <a href="nuevousuario.html" class="btn btn-primary" type="submit">Continuar con el plan
+            </a>
+            <!--<label for="fecha_nacimiento">Fecha de Nacimiento:</label><br> 
+            <input type="date" id="fecha_nacimiento" onchange="calcularEdad()"> 
+            <button type="button" onclick="calcularEdad()" id="boton"  class="btn btn-primary">Mostrar tu edad</button>
+                <script src="js/date.js"></script> -->
 
         <h3>Por que te pedimos esta informacion?</h3>
         <p>Por que el diseño y programación de una dieta deberá basarse en los resultados de una valoración inicial y completa 

@@ -1,4 +1,6 @@
+
 window.onload=iniciar;
+
 
 function iniciar(){
   var btnCalcular=  document.getElementById("btnCalcular");
@@ -17,4 +19,6 @@ function clickBtnCalcular(){
     var Imc = peso / (altura * altura);
     alert (" Su Imc es: " + Math.round(Imc));
     
+
 }
+
