@@ -1,0 +1,264 @@
+html
+{
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin-left:0rem;
+    margin-right: 0rem;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+*,
+*::before
+*::after
+{
+    box-sizing:inherit
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+/* ====== Variables =====*/
+:root{
+
+    --bg_color_nav:#000000;
+    --width_general:100%-2rem ;
+    --height_nav: 4rem;
+    font-family: 'Quicksand', sans-serif;
+    /* colores
+     nav: #03989e
+    */
+
+
+}
+/* =============================================== Index ==================================================*/
+/* -------------------- nav --------------------- */
+.index_nav {
+    height:var(--height_nav);
+    width:100%;
+    margin: 0rem;
+    
+    background-color: var(--bg_color_nav);
+    
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+
+} 
+/*-------------------------------------------*/  
+.index_nav_image{
+    display: flex;
+    order: 2;
+    width: 50%;
+    height: 100%;
+    padding:.1rem;
+    align-items: center;
+    box-sizing: border-box;
+    
+}
+.index_nav_image_url{
+    background-image: url(/img/nuevo/logo.png);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 4rem;
+    border-radius: .3rem;
+   
+ 
+}
+.index_nav_image_nombre{
+   
+    box-sizing: border-box;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1rem;
+    color: #ffffff;
+    
+}
+/*--------------------------------------------*/
+.index_nav{
+    margin: 0rem;
+}
+
+.index_nav_ul {
+    height: 100%;
+    width: 50%;
+
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    order: 1;
+    
+    /* anti-boostrap*/
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+    
+}
+.index_nav_ul *{
+   text-decoration: none;
+    padding: .3rem;
+    list-style-type: none;
+    color: #ffffff   ;
+    font-size: 1.2rem;
+    
+}
+.index_nav_ul *:hover{
+    text-decoration: none;
+    padding: .3rem;
+    list-style-type: none;
+    color: #ffffff   ;
+    font-size: 1.25rem;
+}
+/* ---------------------  header ----------------------------- */
+.index_header{
+    background-image: url(/img/nuevo/hero.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height:90vh;
+    
+
+   
+}
+
+.index_header_title{
+   
+
+    background-image: linear-gradient(90deg, rgb(0,0,0,0), rgb(0,0,0));
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;       
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    padding-top: 4rem;
+
+}
+.index_header_title *{
+color: #ffffff;
+justify-content: center;
+margin-bottom: 0rem; /* por default */
+}
+
+/* ------------------ Descripcion del sitio ---------------------- */
+.index_description_site{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+
+    
+   
+    
+}
+.index_description_site_item{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    width: var(--width_general);
+    height: 33.33%;
+    
+}
+
+    /* caja 1 */
+.index_description_site_item_tit{
+    height: 100%;
+    width: 70%;
+    padding: 2rem;
+    padding-top: 3rem;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_description_site_item_img_1{
+    height:20rem;
+    width: 30%;
+    margin: 2rem;
+    background-image: url(/img/nuevo/nuestra_mision1.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+}
+    /* caja 2 */
+.index_description_site_item_img_2{
+        height:20rem;
+        width: 30%;
+        margin: 2rem;
+        background-image: url(/img/nuevo/nuestra_vision.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+}
+
+    /* caja 3 */
+.index_description_site_item_img_3{
+        height:20rem;
+        width: 30%;
+        margin: 2rem;
+        background-image: url(/img/nuevo/contamos.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+
+    }
+
+/* --------------------- Cuadro de Funcionamiento --------------*/
+.index_cuadro_titulo{
+    margin: 1rem;
+}
+
+.index_cuadro_titulo *{
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/*-------------------------*/
+.index_cuadro {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    height: 40vh;
+    border: 1px solid black;
+    
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch; 
+}
+.index_cuadro_item{
+    /*width: 33.33%;
+    height: 100%;*/
+    flex-grow: 0;
+    border: 1px solid black;
+    margin: .5rem;
+    
+}
+
+
+
+/* -------- footer ------- */
+
+
+/* ====== Pagina 1 ==========*/
+        
+/* -------- header ------- */
+/* --------  body -------- */
+/* -------- footer ------- */
+
+
+/* ====== Pagina 2 ==========*/
+        
+/* -------- header ------- */
+/* --------  body -------- */
+/* -------- footer ------- */
