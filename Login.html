@@ -15,18 +15,27 @@
 
   <body>
     
-    <section class="form-login">
+    <div class="otrofondo">
+      <ul>
+          <li> <a href="index.html">INICIO</a></li>
+          <li> <a href="registro_nuevo_usuario.html">REGISTRO DE NUEVOS USUARIOS</a></li>
+          <li> <a href="contacto.html">CONTACTO</a></li>
+  
+      </ul>
+  <section class="form-login">
       <h5>Formulario Login</h5>
+      <form action="loguear.php" method="POST">
       <input class="controls" type="text" name="usuario" value="" placeholder="Usuario">
-      <input class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
+      <input class="controls" type="password" name="contraseña" value="" placeholder="Contraseña">
       <input class="buttons" type="submit" name="" value="Ingresar">
       <p><a href="#">¿Olvidastes tu Contraseña?</a></p>
-
-      <p><em><a href="index.html">INICIO</a></em></p>
-
-  
+      </form>
 
     </section>
+    
+    
+    
+</div>
   
     <script src="js/funcionesGrupo99.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>  
