@@ -20,15 +20,11 @@ body{
 /* ====== Variables =====*/
 :root{
 
-    --bg_color_nav:#000000;
+    --bg_color_nav:#154360;
     --width_general:100%-2rem ;
-    --height_nav: 4rem;
+    --height_nav: 3.5rem;
+    --detalles:#839192;
     font-family: 'Quicksand', sans-serif;
-    /* colores
-     nav: #03989e
-    */
-
-
 }
 /* =============================================== Index ==================================================*/
 /* -------------------- nav --------------------- */
@@ -42,15 +38,14 @@ body{
     display: flex;
     flex-direction: row-reverse;
     flex-wrap: nowrap;
-
-} 
+}
 /*-------------------------------------------*/  
 .index_nav_image{
     display: flex;
     order: 2;
     width: 50%;
     height: 100%;
-    padding:.1rem;
+    padding:.2rem;
     align-items: center;
     box-sizing: border-box;
     
@@ -59,25 +54,23 @@ body{
     background-image: url(/img/logo.png);
     background-size: 100% 100%;
     height: 100%;
-    width: 4rem;
+    width: 3.3rem;
     border-radius: .3rem;
+    
+    
    
  
 }
 .index_nav_image_nombre{
    
     box-sizing: border-box;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    font-size: 1rem;
-    color: #ffffff;
+    /*por si se quiere agregar algo*/
     
 }
 /*--------------------------------------------*/
 .index_nav{
     margin: 0rem;
 }
-
 .index_nav_ul {
     height: 100%;
     width: 50%;
@@ -93,11 +86,11 @@ body{
     
 }
 .index_nav_ul *{
-   text-decoration: none;
+    text-decoration: none;
     padding: .3rem;
     list-style-type: none;
     color: #ffffff   ;
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     
 }
 .index_nav_ul *:hover{
@@ -105,9 +98,9 @@ body{
     padding: .3rem;
     list-style-type: none;
     color: #ffffff   ;
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
-/* ---------------------  header ----------------------------- */
+/* ---------------------  Header ----------------------------- */
 .index_header{
     background-image: url(/img/index_hero.jpg);
     background-size: 100% 100%;
@@ -117,11 +110,10 @@ body{
 
    
 }
-
 .index_header_title{
    
 
-    background-image: linear-gradient(90deg, rgb(0,0,0,0), rgb(0,0,0));
+    background-image: linear-gradient(90deg, rgb(0,0,0,0), rgb(0,0,0,1));
     background-size: 100% 100%;
     width: 100%;
     height: 100%;       
@@ -137,7 +129,6 @@ color: #ffffff;
 justify-content: center;
 margin-bottom: 0rem; /* por default */
 }
-
 /* ------------------ Descripcion del sitio ---------------------- */
 .index_description_site{
     margin-top: 1rem;
@@ -149,6 +140,7 @@ margin-bottom: 0rem; /* por default */
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: stretch;
+    
 
     
    
@@ -178,76 +170,213 @@ margin-bottom: 0rem; /* por default */
     justify-content: center;
     align-items: center;
 }
-
 .index_description_site_item_img_1{
-    height:20rem;
+    height:18rem;
     width: 30%;
     margin: 2rem;
     background-image: url(/img/index_nuestra_mision.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     border-radius: 1rem;
+   
 }
+
     /* caja 2 */
 .index_description_site_item_img_2{
-        height:20rem;
+        height:18rem;
         width: 30%;
         margin: 2rem;
         background-image: url(/img/index_nuestra_vision.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border-radius: 1rem;
+       
 }
 
     /* caja 3 */
 .index_description_site_item_img_3{
-        height:20rem;
+        height:18rem;
         width: 30%;
         margin: 2rem;
         background-image: url(/img/index_contamos.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
         border-radius: 1rem;
+        
 
-    }
-
-/* --------------------- Cuadro de Funcionamiento --------------*/
-.index_cuadro_titulo{
-    margin: 1rem;
 }
 
-.index_cuadro_titulo *{
-    margin: 1rem;
+/* ------------------- Cuadro de Funcionamiento ----------------*/
+.index_cuadro_titulo{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    border-top: 1px solid var(--detalles);
+    
+}
+.index_cuadro_titulo h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0rem /* por default*/;
+   
+}
+/*-------------------------*/
+.index_cuadro_entero{
+    background-image: linear-gradient(90deg, rgb( 212, 230, 241), rgb(254,254,254));
+
+}
+.index_cuadro {
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
+  
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: stretch; 
+
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--detalles);
+    
+    
+}
+.index_cuadro_item{
+    width: 33.33%;
+    
+    margin: .4rem;
+    padding: .5rem;
+    background-color: #ffffff;
+    border: 1px solid var(--detalles) ;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+   
+    
+}
+
+/* ----------- Cuadro Indice Masa Corporal --------- */
+.index_calculo_masa{
+    margin: 2rem;
+    border-bottom: 1px solid var(--detalles);
+    padding-bottom: 2.5rem;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+/* -----------------------*/
+
+.index_calculo_masa_item_1{
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 2.5rem;
+    width: 60%;
+}
+.index_calculo_masa_form{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-/*-------------------------*/
-.index_cuadro {
-    margin-top: 1rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-    height: 40vh;
-    border: 1px solid black;
-    
-    display:flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    align-items: stretch; 
-}
-.index_cuadro_item{
-    /*width: 33.33%;
-    height: 100%;*/
-    flex-grow: 0;
-    border: 1px solid black;
-    margin: .5rem;
-    
+
+.index_calculo_masa_form_datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
+.index_calculo_masa_form_datos *{
+    margin: .3rem;
+}
+.index_calculo_masa_form_datos_boton{
+    background-color: var(--bg_color_nav);
+    color: #ffffff;
+    padding: .5rem;
+    border: 1px solid #ffffff;
+    border-radius: .5rem;
+}
+
+* ---------------------- */
+
+.index_calculo_masa_item_2{
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
 
 
 /* -------- footer ------- */
+.index_footer {
+
+    background-color: var(--bg_color_nav);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+
+/* ------------------ */
+.index_footer_item_1 {
+    display: flex;
+    flex-direction: column;
+}
+.index_footer_item_1 *{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+}
+.index_footer_menu_ul *{
+    text-decoration: none;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 1.15rem;
+}
+.index_footer_menu_ul:hover *{
+    text-decoration: none;
+    padding-left: .19rem;
+    padding-right: .19rem;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 1.16rem;
+
+}
+
+.index_footer_redes_ul *{
+    align-items: baseline;
+    text-decoration: none;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    list-style-type: none;
+    color: #ffffff   ;
+    font-size: 2rem;
+}
+
+/* --------------- */
+.index_footer_item_2 {
+    padding-top: 1.5rem;
+
+}
+.index_footer_item_2 *{
+    color: #ffffff;
+
+}
+
 
 
 /* ====== Pagina 1 ==========*/
