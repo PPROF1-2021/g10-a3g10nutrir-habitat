@@ -1,5 +1,6 @@
 html
 {
+<<<<<<< HEAD
   background-image : ('../img/fondoazulkiwi.jpg');
   
   height: 100%;
@@ -12,27 +13,59 @@ html
   height: 100vh;
 }
 p
+=======
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    margin-left:0rem;
+    margin-right: 0rem;
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Quicksand', sans-serif;
+}
+*,
+*::before
+*::after
+>>>>>>> c711a32c92f621e1df35ca7a2108b2116decbe98
 {
-    color:white;
-    padding-left: 30px;
+    box-sizing:inherit
+}
+body{
+    font-family: 'Quicksand', sans-serif;
+}
+/* ====== Variables =====*/
+:root{
+
+    --bg_color_nav:#154360;
+    --width_general:100%-2rem ;
+    --height_nav: 3.5rem;
+    --detalles:#839192;
+    font-family: 'Quicksand', sans-serif;
+}
+/* =============================================== Index ==================================================*/
+/* -------------------- nav --------------------- */
+.index_nav {
+    height:var(--height_nav);
+    width:100%;
+    margin: 0rem;
+    
+    background-color: var(--bg_color_nav);
+    
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+/*-------------------------------------------*/  
+.index_nav_image{
+    display: flex;
+    order: 2;
+    width: 50%;
+    height: 100%;
+    padding:.2rem;
+    align-items: center;
+    box-sizing: border-box;
     
 }
-h1
-{
-  padding-left: 30px;
-    color: white;
-    font-size: x-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-h2, h3 ,h4
-
-{
-  padding-left: 30px;
-    color: white;
-    font-size: x-large;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
+<<<<<<< HEAD
 body
 {
     background-image: url("../img/fondoazulkiwi.jpg");
@@ -43,312 +76,346 @@ body
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.3em;
  
+=======
+.index_nav_image_url{
+    background-image: url(/img/logo.png);
+    background-size: 100% 100%;
+    height: 100%;
+    width: 3.3rem;
+    border-radius: .3rem;
+>>>>>>> c711a32c92f621e1df35ca7a2108b2116decbe98
     
     
-    
-    
-    
-  
-           
-  
+   
+ 
 }
-
-header {
-    background-color: rgb(47,47,47);
-    padding: 20px;
-    text-align: center;
-
-    width: auto;
-
+.index_nav_image_nombre{
+   
+    box-sizing: border-box;
+    /*por si se quiere agregar algo*/
     
+}
+/*--------------------------------------------*/
+.index_nav{
+    margin: 0rem;
+}
+.index_nav_ul {
+    height: 100%;
+    width: 50%;
 
-    height: 250px;
-    flex: 0 0 auto;
-    
-
-    
-    
-    
-
-  }
-  /*fooooter*/
-  footer{
-    width: 100%;
-    padding: 50px 0px;
-    background-image: url(../Images/background-footer.svg);
-    background-size: cover;
-  }
-  .container__footer{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 100px;
+    flex-direction: row-reverse;
+    align-items: center;
+    order: 1;
+    
+    /* anti-boostrap*/
+    padding-left: 0rem;
+    margin-bottom: 0rem;
+    
 }
+.index_nav_ul *{
+    text-decoration: none;
+    padding: .3rem;
+    list-style-type: none;
+    color: #ffffff   ;
+    font-size: 1.15rem;
+    
+}
+.index_nav_ul *:hover{
+    text-decoration: none;
+    padding: .3rem;
+    list-style-type: none;
+    color: #ffffff   ;
+    font-size: 1.2rem;
+}
+/* ---------------------  Header ----------------------------- */
+.index_header{
+    background-image: url(/img/index_hero.jpg);
+    background-size: 100% 100%;
+    width: 100%;
+    height:90vh;
+    
 
-.box__footer{
+   
+}
+.index_header_title{
+   
+
+    background-image: linear-gradient(90deg, rgb(0,0,0,0), rgb(0,0,0,1));
+    background-size: 100% 100%;
+    width: 100%;
+    height: 100%;       
     display: flex;
     flex-direction: column;
-    padding: 40px;
-}
-
-.box__footer .logo img{
-    width: 180px;
-}
-
-.box__footer .terms{
-    max-width: 350px;
-    margin-top: 20px;
-    font-weight: 500;
-    color: #7a7a7a;
-    font-size: 18px;
-}
-
-.box__footer h2{
-    margin-bottom: 30px;
-    color: #343434;
-    font-weight: 700;
-}
-
-.box__footer a{
-    margin-top: 10px;
-    color: #7a7a7a;
-    font-weight: 600;
-}
-
-.box__footer a:hover{
-    opacity: 0.8;
-}
-
-.box__footer a .fab{
-    font-size: 20px;
-}
-
-.box__copyright{
-    max-width: 1200px;
-    margin: auto;
-    text-align: center;
-    padding: 0px 40px;
-}
-
-.box__copyright p{
-    margin-top: 20px;
-    color: #7a7a7a;
-}
-
-.box__copyright hr{
-    border: none;
-    height: 1px;
-    background-color: #7a7a7a;
-}
- 
-  a:hover {
-   color: white;
-   background-color:grey;
+    justify-content: start;
+    align-items: center;
+    padding-top: 4rem;
 
 }
-
-a {
-  color:orangered;
+.index_header_title *{
+color: #ffffff;
+justify-content: center;
+margin-bottom: 0rem; /* por default */
 }
-ul {
-  list-style-type: none;
-  margin: 10;
-  padding: 0;
-  width: 200px;
-  background-color: #f1f1f1;
+/* ------------------ Descripcion del sitio ---------------------- */
+.index_description_site{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
+
+    
+   
+    
 }
-li a {
-  display: block;
-  color: #000;
-  padding: 8px 8px;
-  text-decoration: none;
+.index_description_site_item{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+
+    width: var(--width_general);
+    height: 33.33%;
+    
 }
 
+    /* caja 1 */
+.index_description_site_item_tit{
+    height: 100%;
+    width: 70%;
+    padding: 2rem;
+    padding-top: 3rem;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.index_description_site_item_img_1{
+    height:18rem;
+    width: 30%;
+    margin: 2rem;
+    background-image: url(/img/index_nuestra_mision.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    border-radius: 1rem;
+   
+}
 
-.contenedor{
-  background-color:#1B4F72 ; 
-  padding:15px ;
-  width:80%;
-  max-width: 1000px;
-  margin: 0 auto;
-  overflow: hidden;
-  height:600px;
-  display: flex;
+    /* caja 2 */
+.index_description_site_item_img_2{
+        height:18rem;
+        width: 30%;
+        margin: 2rem;
+        background-image: url(/img/index_nuestra_vision.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+       
+}
+
+    /* caja 3 */
+.index_description_site_item_img_3{
+        height:18rem;
+        width: 30%;
+        margin: 2rem;
+        background-image: url(/img/index_contamos.png);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        border-radius: 1rem;
+        
+
+}
+
+/* ------------------- Cuadro de Funcionamiento ----------------*/
+.index_cuadro_titulo{
+    margin-left: 2rem;
+    margin-right: 2rem;
+    padding: 2rem;
+    border-top: 1px solid var(--detalles);
+    
+}
+.index_cuadro_titulo h3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 0rem /* por default*/;
+   
+}
+/*-------------------------*/
+.index_cuadro_entero{
+    background-image: linear-gradient(90deg, rgb( 212, 230, 241), rgb(254,254,254));
+
+}
+.index_cuadro {
+    
+    margin-left: 2rem;
+    margin-right: 2rem;
   
-  }
-  .elemento{
-  background-color:black;
-    margin: 50px;
-    height: 500px;
-    width: 200px;
-    text-align: justify;
-  
-  }
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    align-items: stretch; 
 
-  .Imc{
-    text-align: center;
-    padding: 50px;
-    background-color:yellowgreen;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--detalles);
     
     
-  }
- 
-  /*barra horizontal2*/
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+}
+.index_cuadro_item{
+    width: 33.33%;
+    
+    margin: .4rem;
+    padding: .5rem;
+    background-color: #ffffff;
+    border: 1px solid var(--detalles) ;
+    border-radius: .5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+   
+   
+    
+}
+
+/* ----------- Cuadro Indice Masa Corporal --------- */
+.index_calculo_masa{
+    margin: 2rem;
+    border-bottom: 1px solid var(--detalles);
+    padding-bottom: 2.5rem;
+    
+    display: flex;
+    flex-direction: row;
+}
+
+/* -----------------------*/
+
+.index_calculo_masa_item_1{
+    display: flex;
+    flex-direction: column;
+
+    padding-right: 2.5rem;
+    width: 60%;
+}
+.index_calculo_masa_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_calculo_masa_form_datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.index_calculo_masa_form_datos *{
+    margin: .3rem;
+}
+.index_calculo_masa_form_datos_boton{
+    background-color: var(--bg_color_nav);
+    color: #ffffff;
+    padding: .5rem;
+    border: 1px solid #ffffff;
+    border-radius: .5rem;
+}
+
+* ---------------------- */
+
+.index_calculo_masa_item_2{
+    display: flex;
+    flex-direction: column;
+
+    width: 40%;
+}
+
+
+/* -------- footer ------- */
+.index_footer {
+
+    background-color: var(--bg_color_nav);
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+
+
+/* ------------------ */
+.index_footer_item_1 {
+    display: flex;
+    flex-direction: column;
+}
+.index_footer_item_1 *{
+    display: flex;
+    flex-direction: row;
+    color: #ffffff;
+}
+.index_footer_menu_ul *{
     text-decoration: none;
-  }
-  
-  li a:hover {
-    background-color: #111;
-  }
-  
-  
-/*CSS de formulario login*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 1.15rem;
+}
+.index_footer_menu_ul:hover *{
+    text-decoration: none;
+    padding-left: .19rem;
+    padding-right: .19rem;
+    list-style-type: none;
+    color: #ffffff;
+    font-size: 1.16rem;
+
+}
+
+.index_footer_redes_ul *{
+    align-items: baseline;
+    text-decoration: none;
+    padding-left: .2rem;
+    padding-right: .2rem;
+    list-style-type: none;
+    color: #ffffff   ;
+    font-size: 2rem;
+}
+
+/* --------------- */
+.index_footer_item_2 {
+    padding-top: 1.5rem;
+
+}
+.index_footer_item_2 *{
+    color: #ffffff;
+
 }
 
 
 
-.form-login {
-  width: 400px;
-  height: 340px;
-  background: #4e4d4d;
-  margin: auto;
-  margin-top: 180px;
-  box-shadow: 7px 13px 37px #000;
-  padding: 20px 30px;
-  border-top: 4px solid #017bab;
-  color: white;
-}
+/* ====== Pagina 1 ==========*/
+        
+/* -------- header ------- */
+/* --------  body -------- */
+/* -------- footer ------- */
 
-.form-login h5 {
-  margin: 0;
-  text-align: center;
-  height: 40px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid;
-  font-size: 20px;
-}
 
-.controls {
-  width: 100%;
-  border: 1px solid #017bab;
-  margin-bottom: 15px;
-  padding: 11px 10px;
-  background: #252323;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-.buttons {
-  width: 100%;
-  height: 40px;
-  background: #017bab;
-  border: none;
-  color: white;
-  margin-bottom: 16px;
-}
-
-.form-login p{
-  height: 40px;
-  text-align: center;
-  border-bottom: 1px solid;
-}
-
-.form-login a {
-  color: white;
-  text-decoration: none;
-  font-size: 14px;
-}
-
-.form-login a:hover {
-  text-decoration: underline;
-}
-/*CSS nuevos usuarios*/
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-image:;
-}
-
-.form-register {
-  width: 400px;
-  background: #24303c;
-  padding: 30px;
-  margin: auto;
-  margin-top: 100px;
-  border-radius: 4px;
-  font-family: 'calibri';
-  color: white;
-  box-shadow: 7px 13px 37px #000;
-}
-
-.form-register h4 {
-  font-size: 22px;
-  margin-bottom: 20px;
-}
-
-.controls {
-  width: 100%;
-  background: #24303c;
-  padding: 10px;
-  border-radius: 4px;
-  margin-bottom: 16px;
-  border: 1px solid #1f53c5;
-  font-family: 'calibri';
-  font-size: 18px;
-  color: white;
-}
-
-.form-register p {
-  height: 40px;
-  text-align: center;
-  font-size: 18px;
-  line-height: 40px;
-}
-
-.form-register a {
-  color: white;
-  text-decoration: none;
-}
-
-.form-register a:hover {
-  color: white;
-  text-decoration: underline;
-}
-
-.form-register .botons {
-  width: 100%;
-  background: #1f53c5;
-  border: none;
-  padding: 12px;
-  color: white;
-  margin: 16px 0;
-  font-size: 16px;
-}
+/* ====== Pagina 2 ==========*/
+        
+/* -------- header ------- */
+/* --------  body -------- */
+/* -------- footer ------- */
