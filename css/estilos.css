@@ -305,7 +305,8 @@ margin-bottom: 0rem; /* por default */
     border-radius: .5rem;
 }
 
-* ---------------------- */
+
+
 
 
 /* -------- footer ------- */
@@ -317,7 +318,7 @@ margin-bottom: 0rem; /* por default */
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
-    align-items: flex-start;
+    align-items: center;
 }
 
 
@@ -332,24 +333,6 @@ margin-bottom: 0rem; /* por default */
     flex-direction: row;
     color: #ffffff;
 }
-.index_footer_menu_ul *{
-    text-decoration: none;
-    padding-left: .2rem;
-    padding-right: .2rem;
-    list-style-type: none;
-    color: #ffffff;
-    font-size: 1.15rem;
-}
-.index_footer_menu_ul:hover *{
-    text-decoration: none;
-    padding-left: .19rem;
-    padding-right: .19rem;
-    list-style-type: none;
-    color: #ffffff;
-    font-size: 1.16rem;
-
-}
-
 .index_footer_redes_ul *{
     align-items: baseline;
     text-decoration: none;
@@ -362,14 +345,24 @@ margin-bottom: 0rem; /* por default */
 
 /* --------------- */
 .index_footer_item_2 {
-    padding-top: 1.5rem;
+    padding: .2rem;
 
 }
 .index_footer_item_2 *{
     color: #ffffff;
-
 }
 
+/* --------------- */
+.index_footer_item_3 {
+    padding: 0rem;
+
+}
+.index_footer_item_3 *{
+    color: #ffffff;
+    font-size: 1.5rem;
+
+    
+}
 
 /* ====== Pagina 1 ==========*/
         
