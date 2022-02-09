@@ -1,8 +1,8 @@
 <?php
 $servidor = "localhost";
-$usuario = "id17393219_martinesteban";
-$contraseña="M@r2002176378";
-$Base="id17393219_desarrolloweb";
+$usuario = "martinesteban";
+$contraseña="Martin2022@@";
+$Base="id18429556_rns_basededatos";
 
 
 // Create connection

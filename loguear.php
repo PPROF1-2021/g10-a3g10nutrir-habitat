@@ -6,7 +6,7 @@ session_start();
 $_SESSION['usuario@']=$usuariologin;
 
 
-$conexion=mysqli_connect("localhost","id17393219_martinesteban","M@r2002176378","id17393219_desarrolloweb");
+$conexion=mysqli_connect("localhost","martinesteban","Martin2022@@","id18429556_rns_basededatos");
 
 $consulta="SELECT*FROM registro where email='$usuariologin' and contraseña='$contraseñalogin'";
 $resultado=mysqli_query($conexion,$consulta);
