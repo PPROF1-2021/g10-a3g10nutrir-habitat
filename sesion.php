@@ -1,24 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-   
 
-    <title>Sesion</title>
-    <link rel="stylesheet" href="css/estilos.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    
-    
+  <!--Favicon-->
+  <link rel="icon" type="image/png" sizes="32x32" href="img/android-icon-36x36.png">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, user-scalable=no initial-scale=1.0 ,maximun-scale=1.0, minimun-scale=1.0">
+  <title>ROUTINES AND NUTRITION SUPPORT</title>
+  
+  <!--Normalize-->
+  <link rel="stylesheet" href="css/normalize.css">
+
+  <!--Boostrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+  <!--Fontawesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+  
+  <!--Fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+  <!--Estilos-->
+  <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-  <header>
-    <div class=header>
-  <a title="Inicio" href="index.html"><img src="img/logo.png" alt="logo" /></a>
+  <!-- NAV -->  
+<nav id="index_inicio" class="index_nav">
+
+<div class="index_nav_image">
+  <article class="index_nav_image_url"></article>
+
+  <article class="index_nav_image_nombre"></article>
 </div>
-</header>
+    
+<ul class="index_nav_ul">
+        <li class="index_nav_li"><a href="contacto.html"><i class="fas fa-phone"></i>Contacto</a></li>
+
+        <li class=""><a href="Registrodenuevosusuario.html"><i class="fas fa-sign-in-alt"></i> Registro</a></li>
+
+        <li class="index_nav_li"><a href="Login.html"><i class="fas fa-user"></i> Login</a> </li>
+
+        <li class="index_nav_li"><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+
+        
+</ul>
+    
+</nav>
 
     <div class="session">
 
@@ -80,5 +109,3 @@ Entre las opciones que podemos elegir están andar en bicicleta o spinning, runn
 </body>
 
 </html>
-
-

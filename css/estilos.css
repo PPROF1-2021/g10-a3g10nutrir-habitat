@@ -20,13 +20,16 @@ body{
 /* ====== Variables =====*/
 :root{
 
-    --bg_color_nav:#154360;
+    --bg_color_nav: #154360 ;
     --width_general:100%-2rem ;
     --height_nav: 3.5rem;
     --detalles:#839192;
     font-family: 'Quicksand', sans-serif;
 }
-/* =============================================== Index ==================================================*/
+/* 
+COLORES: #154360 axul
+
+=============================================== Index ==================================================*/
 /* -------------------- nav --------------------- */
 .index_nav {
     height:var(--height_nav);
@@ -106,13 +109,8 @@ body{
     background-size: 100% 100%;
     width: 100%;
     height:90vh;
-    
-
-   
 }
 .index_header_title{
-   
-
     background-image: linear-gradient(90deg, rgb(0,0,0,0), rgb(0,0,0,1));
     background-size: 100% 100%;
     width: 100%;
@@ -130,49 +128,52 @@ justify-content: center;
 margin-bottom: 0rem; /* por default */
 }
 /* ------------------ Descripcion del sitio ---------------------- */
-.index_description_site{
+
+
+.index_description_site {
     margin-top: 1rem;
     margin-left: 2rem;
     margin-right: 2rem;
     margin-bottom: 1rem;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: stretch;
-    
+} 
 
-    
-   
-    
-}
 .index_description_site_item{
 
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-
+    justify-content: space-evenly;
+    align-items: center;
+    
     width: var(--width_general);
-    height: 33.33%;
+    height: 20rem;
     
 }
 
-    /* caja 1 */
+/* ---------------------------- */
 .index_description_site_item_tit{
-    height: 100%;
+    height: 20rem;
     width: 70%;
     padding: 2rem;
-    padding-top: 3rem;
    
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
+.index_description_site_item_tit p {
+    overflow: scroll;
+    
+}
+.index_description_site_item_tit h3 {
+    padding-bottom: .5rem;
+}
+
+
+
+    /* caja 1 */
 .index_description_site_item_img_1{
     height:18rem;
-    width: 30%;
+    width: 18rem;
     margin: 2rem;
     background-image: url(/img/index_nuestra_mision.png);
     background-size: 100% 100%;
@@ -184,7 +185,7 @@ margin-bottom: 0rem; /* por default */
     /* caja 2 */
 .index_description_site_item_img_2{
         height:18rem;
-        width: 30%;
+        width: 18rem;
         margin: 2rem;
         background-image: url(/img/index_nuestra_vision.png);
         background-size: 100% 100%;
@@ -196,7 +197,7 @@ margin-bottom: 0rem; /* por default */
     /* caja 3 */
 .index_description_site_item_img_3{
         height:18rem;
-        width: 30%;
+        width: 18rem;
         margin: 2rem;
         background-image: url(/img/index_contamos.png);
         background-size: 100% 100%;
@@ -246,6 +247,7 @@ margin-bottom: 0rem; /* por default */
 }
 .index_cuadro_item{
     width: 33.33%;
+    height:20rem;
     
     margin: .4rem;
     padding: .5rem;
@@ -256,10 +258,10 @@ margin-bottom: 0rem; /* por default */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-   
-   
-    
+    overflow: scroll;
 }
+
+
 
 /* ----------- Cuadro Indice Masa Corporal --------- */
 .index_calculo_masa{
@@ -285,6 +287,13 @@ margin-bottom: 0rem; /* por default */
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    border:1px solid var(--detalles); 
+    border-radius: .5rem;
+    background-color: rgb( 212, 230, 241) ;
+
+    padding:.5rem;
+
 }
 
 .index_calculo_masa_form_datos{
@@ -301,9 +310,10 @@ margin-bottom: 0rem; /* por default */
     background-color: var(--bg_color_nav);
     color: #ffffff;
     padding: .5rem;
-    border: 1px solid #ffffff;
+    border: 1px solid #eeeeee;
     border-radius: .5rem;
 }
+
 
 
 
@@ -424,7 +434,7 @@ margin-bottom: 0rem; /* por default */
 
 
 
-/* ESTILO FORM LOGIN*/
+/* ==================== ESTILO FORM LOGIN ================== */
 
 .form-login {
     width: 400px;
@@ -497,9 +507,13 @@ margin-bottom: 0rem; /* por default */
       background-attachment: fixed;
       overflow: scroll;
   }
+  /* ---------- */
+  .login_form_boton  {
+      background-color: var(--bg_color_nav)
+  }
 
 
-  /*Formulario de registro*/
+  /* ======================== Formulario de registro ======================= */
   /* Add padding to containers */
 .container {
     padding: 16px;
