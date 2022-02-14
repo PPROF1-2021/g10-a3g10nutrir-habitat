@@ -13,6 +13,14 @@
    
    <?php
 
+include("conexion.php");
+if ($conn) {
+    echo "Todo correcto, estas conectado a la base de datos";
+     
+ }else{
+     echo "Ocurrio un error, no pudimos conectarnos a la base de datos <hr>";
+
+}
 $nombre=$_POST["nombre1"];
 $apellido=$_POST["apellido"];
 $provincia=$_POST["provincia"];
@@ -20,26 +28,12 @@ $email=$_POST["email"];
 $contra=$_POST["contrasenha"];
 
 
-
-
-
-
-
-
-include("conexion.php");
-$conn = mysqli_connect($servidor,$usuario,$contraseña,$Base) or die ("no se ha podido conectar a la base");
-if(!$conn){
-
- die ("conexion fallida" . mysqli_connect_error());
-}
-
-$db=mysqli_select_db($conn, $Base)or die("ups");
-$consulta = "INSERT INTO registro (nombre, apellido, provincia, email, contraseña) VALUES ('$nombre','$apellido','$provincia','$email','$contra')";
+$consulta = "INSERT INTO registro(nombre, apellido, provincia, email, contraseña) VALUES ('$nombre','$apellido','$provincia','$email','$contra')";
 if (mysqli_query ($conn, $consulta)){
-    echo "<p> Registro agregado </p>";
+    echo "Registro agregado";
 }else{
-    echo "<p>No se agrego nuevo registro </p>";
-    echo "error: ". $consulta . "<br>". mysqli_error($conn);
+    echo "No se agrego nuevo registro";
+    
 }
 mysqli_close($conn);
 

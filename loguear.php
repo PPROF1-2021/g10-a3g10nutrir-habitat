@@ -1,17 +1,37 @@
 <?php
-include('conexion.php');
+
 $usuariologin=$_POST['usuario@'];
 $contraseñalogin=$_POST['contraseña@'];
 session_start();
 $_SESSION['usuario@']=$usuariologin;
 
+//comprobamos si estamos conectados a la base de datos//
+include('conexion.php');
+if ($conn) {
+  echo "Estas conectado a la base de datos";
+   
+}else{
+   echo "Ocurrio un error, no pudimos conectarnos a la base de datos";
 
-$conexion=mysqli_connect("localhost","id17393219_martinesteban","M@r2002176378","id17393219_desarrolloweb");
+}
+?>
+<hr>
+<?php
 
-$consulta="SELECT*FROM registro where email='$usuariologin' and contraseña='$contraseñalogin'";
-$resultado=mysqli_query($conexion,$consulta);
+$consulta1="SELECT*FROM registro where email='$usuariologin' and contraseña='$contraseñalogin'";
+//Comprobamos si se realizo la consulta correctamente//
+if ($consulta1) {
+  echo "Se realizo la consulta";
+   
+}else{
+   echo "Ocurrio un error, no se realizo la operacion de consulta";
 
-$filas=mysqli_num_rows($resultado);
+}
+
+//creamos la variable 'resultado1' para tomar las dos variables para luego tomarles los datos.//
+$resultado1=mysqli_query($conn,$consulta1);
+
+$filas=mysqli_num_rows($resultado1);
 
 if($filas){
   
@@ -21,13 +41,13 @@ if($filas){
     ?>
 
     <?php
-    include("login.html");
+    include("Login.html");
 ?>
   <h1 class= "bad"> ERROR DE AUTENTIFICACION </h1>
   
   <?php
 }
 
-mysqli_free_result($resultado);
-mysqli_close($conexion);
+mysqli_free_result($resultado1);
+mysqli_close($conn);
 ?>
